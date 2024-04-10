@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rows and columns</title>
+</head>
+<style>
+    .container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: aqua;
+        width: 100%;
+        align-items: center;
+        z-index: 1;
+        height: 100px;
+    }
+    .left{
+        background-color: lime;
+        padding: 25px;
+        width: 200px;
+        
+    }
+    .middle{
+        background-color: pink;
+        flex: 1;
+        padding: 25px;
+        margin: 10px;
+    }
+    .right{
+        background-color: lightblue;
+        padding: 25px;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        
+        
+    }
+    .mode{
+        margin: 5px;
+    }
+    .input{
+        height: 20px;
+        flex: 1;
+    }
+    .sidebar{
+        background-color: rebeccapurple;
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100%;
+        padding-top: 210px;
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+    .side{
+     color: white;
+     padding: 20px;
+     column-gap: 5px;
+   }
+    
+    .box{
+        height: 200px;
+        background-color: yellow;
+    }
+    body{
+        padding-left: 100px;
+        padding-top: 100px;
+        /* padding: 1000px; */
+    }
+    img{
+        display: block;
+        width: 50%;
+        height: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .profile-img{
+        border-radius: 50%;
+    }
+    
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="left"><img src="./images/free-images.jpg" alt="profile" class="profile-img"></div>
+        <div class="middle"><input type="text" placeholder="Search here" class="input">middle section</div>
+        <div class="right">
+            <div class="mode">Light/Dark</div>
+            <div class="mode">Categories</div>
+            <div></div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="side">Contact us</div>
+        <div class="side">About us</div>
+        <div class="side">Settings</div>
+        <div class="side">Ratings</div>
+    </div>
+
+    <div class="grid">
+        <img src="./images/woman-3881133_1280.jpg" alt="image">   
+    </div>
+    
+</body>
+</html>
