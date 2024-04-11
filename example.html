@@ -14,26 +14,24 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background-color: aqua;
+        background-color: whitesmoke;
         width: 100%;
         align-items: center;
         z-index: 1;
         height: 100px;
     }
     .left{
-        background-color: lime;
         padding: 25px;
         width: 200px;
         
     }
     .middle{
-        background-color: pink;
-        flex: 1;
-        padding: 25px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
         margin: 10px;
     }
     .right{
-        background-color: lightblue;
         padding: 25px;
         width: 200px;
         display: flex;
@@ -44,17 +42,14 @@
     .mode{
         margin: 5px;
     }
-    .input{
-        height: 20px;
-        flex: 1;
-    }
+    
     .sidebar{
-        background-color: rebeccapurple;
+        background-color: rgb(201, 181, 181);
         position: fixed;
         bottom: 0;
         top: 0;
         left: 0;
-        width: 100px;
+        width: 10%;
         height: 100%;
         padding-top: 210px;
         display: flex;
@@ -85,7 +80,10 @@
         margin-right: auto;
     }
     .profile-img{
-        border-radius: 50%;
+        width: 80px; 
+        height: 80px; 
+        border-radius: 50%; 
+        overflow: hidden; 
     }
     
 
@@ -93,8 +91,10 @@
 </style>
 <body>
     <header class="container">
-        <div class="left"><img src="./images/free-images.jpg" alt="profile" class="profile-img"></div>
-        <div class="middle"><input type="text" placeholder="Search here" class="input">middle section</div>
+        <div class="left"><img src="./images/image-asset.jpeg" alt="profile" class="profile-img"></div>
+
+        <div class="middle"><h1>Navigation Bar</h1></div>
+        
         <div class="right">
         <div class="mode">Light/Dark</div>
         <div class="mode">Categories</div>
@@ -108,7 +108,7 @@
     </nav>
 
     <section class="grid">
-        <img src="./images/woman-3881133_1280.jpg" alt="image">   
+        <img src="./images/download.png" alt="image">   
     </section>
     
 </body>
